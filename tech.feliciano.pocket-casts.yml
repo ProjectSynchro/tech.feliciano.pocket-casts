@@ -61,8 +61,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/FelicianoTech/pocket-casts-desktop-app.git
-        tag: v0.8.0
-        commit: 06d0439647b500b0ab84566d2d9028d1cff5ede6
+        tag: v0.7.0
+        commit: 027d9ec212e7090ac46c227e0083a778a8c36428
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
