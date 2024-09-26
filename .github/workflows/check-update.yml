@@ -58,6 +58,10 @@ jobs:
           popd
           mv flatpak-builder-tools/node/generated-sources.json ./
 
+      - name: Reset Flatpak manifest to pre-modified state
+        run: |
+          git checkout -- ${FLATPAK_ID}.yml
+
       - name: Run Flatpak External Data Checker again and Open PR 
         uses: docker://ghcr.io/flathub/flatpak-external-data-checker:latest
         env:
