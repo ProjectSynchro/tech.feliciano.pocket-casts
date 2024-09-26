@@ -35,6 +35,11 @@ jobs:
           git status -s -uno
           [ -z "$(git status -s -uno)" ] || echo "::set-output name=updated::true"
 
+      - name: Update Git submodules
+        if: steps.is-updated.outputs.updated
+        run: |
+          git submodule update --init
+
       - name: Install poetry
         if: steps.is-updated.outputs.updated
         run: pipx install poetry
@@ -45,11 +50,11 @@ jobs:
         with:
           python-version: 3.12
           cache: 'poetry'
+          cache-dependency-path: flatpak-builder-tools/node/poetry.lock
 
       - name: Generate Node sources
         if: steps.is-updated.outputs.updated
         run: |
-          git submodule update --init
           tag=$(curl -s https://api.github.com/repos/FelicianoTech/pocket-casts-desktop-app/releases/latest | jq -r '.tag_name')
           pushd flatpak-builder-tools/node
           curl https://raw.githubusercontent.com/FelicianoTech/pocket-casts-desktop-app/${tag}/package-lock.json > package-lock.json
