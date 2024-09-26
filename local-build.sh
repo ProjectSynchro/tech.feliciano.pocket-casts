@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-BRANCH=test
+BRANCH="test"
 
 rm -f tech.feliciano.pocket-casts.flatpak
-rm -rf _build ; mkdir _build
-rm -rf _repo ; mkdir _repo
+rm -rf build-dir ; mkdir build-dir
+rm -rf build-repo ; mkdir build-repo
 
-flatpak-builder --ccache --force-clean --default-branch=$BRANCH _build tech.feliciano.pocket-casts.yml --repo=_repo
-flatpak build-bundle _repo tech.feliciano.pocket-casts.flatpak tech.feliciano.pocket-casts $BRANCH
+flatpak-builder --ccache --force-clean --default-branch="$BRANCH" build-dir tech.feliciano.pocket-casts.yml --repo=build-repo
+flatpak build-bundle build-repo tech.feliciano.pocket-casts.flatpak tech.feliciano.pocket-casts "$BRANCH"
