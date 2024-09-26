@@ -40,17 +40,9 @@ jobs:
         run: |
           git submodule update --init
 
-      - name: Install poetry
+      - name: Install flatpak-node-generator
         if: steps.is-updated.outputs.updated
-        run: pipx install poetry
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        if: steps.is-updated.outputs.updated
-        with:
-          python-version: 3.12
-          cache: 'poetry'
-          cache-dependency-path: flatpak-builder-tools/node/poetry.lock
+        run: pipx install flatpak-builder-tools/node
 
       - name: Generate Node sources
         if: steps.is-updated.outputs.updated
