@@ -5201,8 +5201,14 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-arm64.zip\"",
-            "ln -s \"../electron-v31.0.2-linux-arm64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-arm64.zip/electron-v31.0.2-linux-arm64.zip\"",
+            "mkdir -p \"8a9ae3c3c3afbe55d624d3cb94477aca3b233b9a950223f55436b710b9881c0f\"",
+            "ln -s \"../SHASUMS256.txt-31.0.2\" \"8a9ae3c3c3afbe55d624d3cb94477aca3b233b9a950223f55436b710b9881c0f/SHASUMS256.txt\""
+        ],
+        "dest": "flatpak-node/cache/electron"
+    },
+    {
+        "type": "shell",
+        "commands": [
             "mkdir -p \"8a9ae3c3c3afbe55d624d3cb94477aca3b233b9a950223f55436b710b9881c0f\"",
             "ln -s \"../electron-v31.0.2-linux-arm64.zip\" \"8a9ae3c3c3afbe55d624d3cb94477aca3b233b9a950223f55436b710b9881c0f/electron-v31.0.2-linux-arm64.zip\""
         ],
@@ -5214,8 +5220,6 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-armv7l.zip\"",
-            "ln -s \"../electron-v31.0.2-linux-armv7l.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-armv7l.zip/electron-v31.0.2-linux-armv7l.zip\"",
             "mkdir -p \"8a9ae3c3c3afbe55d624d3cb94477aca3b233b9a950223f55436b710b9881c0f\"",
             "ln -s \"../electron-v31.0.2-linux-armv7l.zip\" \"8a9ae3c3c3afbe55d624d3cb94477aca3b233b9a950223f55436b710b9881c0f/electron-v31.0.2-linux-armv7l.zip\""
         ],
@@ -5227,10 +5231,41 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-x64.zip\"",
-            "ln -s \"../electron-v31.0.2-linux-x64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-x64.zip/electron-v31.0.2-linux-x64.zip\"",
             "mkdir -p \"8a9ae3c3c3afbe55d624d3cb94477aca3b233b9a950223f55436b710b9881c0f\"",
             "ln -s \"../electron-v31.0.2-linux-x64.zip\" \"8a9ae3c3c3afbe55d624d3cb94477aca3b233b9a950223f55436b710b9881c0f/electron-v31.0.2-linux-x64.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "x86_64"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-arm64.zip\"",
+            "ln -s \"../electron-v31.0.2-linux-arm64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-arm64.zip/electron-v31.0.2-linux-arm64.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "aarch64"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-armv7l.zip\"",
+            "ln -s \"../electron-v31.0.2-linux-armv7l.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-armv7l.zip/electron-v31.0.2-linux-armv7l.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "arm"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-x64.zip\"",
+            "ln -s \"../electron-v31.0.2-linux-x64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv31.0.2electron-v31.0.2-linux-x64.zip/electron-v31.0.2-linux-x64.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
