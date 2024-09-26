@@ -1,0 +1,98 @@
+--- a/flatpak/tech.feliciano.pocket-casts.appdata.xml	2024-09-26 04:18:40.151643139 -0400
++++ b/flatpak/tech.feliciano.pocket-casts.appdata.xml	2024-09-26 04:19:23.269545738 -0400
+@@ -1,31 +1,80 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<component type="desktop">
++<component type="desktop-application">
+   <id>tech.feliciano.pocket-casts</id>
+-  <launchable type="desktop-id">tech.feliciano.pocket-casts.desktop</launchable>
++
+   <name>Pocket Casts</name>
++  <summary>Linux desktop player for Pocket Casts</summary>
+   <developer_name>Ricardo N Feliciano</developer_name>
+-  <summary>Online podcast player</summary>
++
++  <url type="homepage">https://github.com/FelicianoTech/pocket-casts-desktop-app</url>
++  <!-- Update the bugtracker link to upstream bugtracker when/if this Flatpak is verified -->
++  <url type="bugtracker">https://github.com/flathub/tech.feliciano.pocket-casts/issues</url>
++
+   <metadata_license>MIT</metadata_license>
+   <project_license>MIT</project_license>
+-  <url type="homepage">https://www.pocketcasts.com/</url>
++
++  <content_rating type="oars-1.1"/>
++
++  <recommends>
++    <control>pointing</control>
++    <control>keyboard</control>
++    <control>touch</control>
++  </recommends>
++
+   <description>
+-    <p>Pocket Casts is the world's most powerful podcast player. It's a great app to discover and listen to your favorite podcasts. Many blogs have deemed Pocket Casts the best podcatcher around.</p>
+-    <p>This is an Electron wrapper around the Pocket Casts web player. You need to have a pre-existing Pocket Casts account (it's cheap and worth the money) to use this app</p>
+-    <p>This wrapper is not verified by, affiliated with, or supported by Pocket Casts or Podcast Media LLC.</p>
++    <p>
++      Pocket Casts is the world's most powerful podcast player. It's a great app to discover and listen to your favorite podcasts. Many blogs have deemed Pocket Casts the best podcatcher around.
++      This is an Electron wrapper around the Pocket Casts web player. You need to have a pre-existing Pocket Casts account (it's cheap and worth the money) to use this app.
++      This wrapper is not verified by, affiliated with, or supported by Pocket Casts or Podcast Media LLC.
++    </p>
+   </description>
++
++  <categories>
++    <category>AudioVideo</category>
++    <category>Utility</category>
++  </categories>
++
++  <launchable type="desktop-id">tech.feliciano.pocket-casts.desktop</launchable>
++
+   <screenshots>
+     <screenshot type="default">
+-      <image type="source">https://raw.githubusercontent.com/felicianotech/pocket-casts-desktop-app/trunk/screenshot.png</image>
++      <caption>A screenshot of the main interface</caption>
++      <image>https://raw.githubusercontent.com/felicianotech/pocket-casts-desktop-app/v0.8.0/screenshot.png</image>
+     </screenshot>
+   </screenshots>
+-  <content_rating type="oars-1.1" />
+   <releases>
+-    <release version="0.5.0" date="2020-12-13">
+-      <description>
+-        <p>
+-          This version fixes the window state not persisting across runs.
+-        </p>
+-      </description>
++    <release version="v0.8.0" type="stable" date="2024-06-23">
++      <url>https://github.com/FelicianoTech/pocket-casts-desktop-app/releases/tag/v0.8.0/</url>
++    </release>
++    <release version="v0.7.0" type="stable" date="2024-10-24">
++      <url>https://github.com/FelicianoTech/pocket-casts-desktop-app/releases/tag/v0.7.0/</url>
++    </release>
++    <release version="v0.6.0" type="stable" date="2022-11-13">
++      <url>https://github.com/FelicianoTech/pocket-casts-desktop-app/releases/tag/v0.6.0/</url>
++    </release>
++    <release version="v0.5.0" type="stable" date="2020-12-13">
++      <url>https://github.com/FelicianoTech/pocket-casts-desktop-app/releases/tag/v0.5.0/</url>
++    </release>
++    <release version="v0.4.2" type="stable" date="2020-07-15">
++      <url>https://github.com/FelicianoTech/pocket-casts-desktop-app/releases/tag/v0.4.2/</url>
++    </release>
++    <release version="v0.4.1" type="stable" date="2020-07-15">
++      <url>https://github.com/FelicianoTech/pocket-casts-desktop-app/releases/tag/v0.4.1/</url>
++    </release>
++    <release version="v0.4.0" type="stable" date="2020-07-10">
++      <url>https://github.com/FelicianoTech/pocket-casts-desktop-app/releases/tag/v0.4.0/</url>
++    </release>
++    <release version="v0.3.0" type="stable" date="2019-09-20">
++      <url>https://github.com/FelicianoTech/pocket-casts-desktop-app/releases/tag/v0.3.0/</url>
++    </release>
++    <release version="v0.2.0" type="stable" date="2019-03-09">
++      <url>https://github.com/FelicianoTech/pocket-casts-desktop-app/releases/tag/v0.2.0/</url>
++    </release>
++    <release version="v0.1.1" type="stable" date="2018-11-30">
++      <url>https://github.com/FelicianoTech/pocket-casts-desktop-app/releases/tag/v0.1.1/</url>
++    </release>
++    <release version="v0.1.0" type="stable" date="2018-11-30">
++      <url>https://github.com/FelicianoTech/pocket-casts-desktop-app/releases/tag/v0.1.0/</url>
+     </release>
+   </releases>
+ </component>

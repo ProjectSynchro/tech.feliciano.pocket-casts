@@ -1,0 +1,16 @@
+--- a/flatpak/tech.feliciano.pocket-casts.desktop	2024-09-26 04:18:40.151643139 -0400
++++ b/flatpak/tech.feliciano.pocket-casts.desktop	2024-09-26 05:33:28.195384204 -0400
+@@ -1,7 +1,10 @@
+ [Desktop Entry]
+ Name=Pocket Casts
+-Exec=run.sh
++Exec=start-pocket-casts %U
+ Terminal=false
+ Type=Application
+ Icon=tech.feliciano.pocket-casts
+-Categories=Audio;
+\ No newline at end of file
++Categories=AudioVideo;Audio;
++X-Desktop-File-Install-Version=0.27
++GenericName=Pocket Casts
++Comment=The Pocket Casts webapp, packaged for the desktop.
