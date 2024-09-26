@@ -40,7 +40,7 @@ jobs:
         run: pipx install poetry
 
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         if: steps.is-updated.outputs.updated
         with:
           python-version: 3.12
