@@ -49,8 +49,9 @@ jobs:
         run: |
           tag=$(curl -s https://api.github.com/repos/FelicianoTech/pocket-casts-desktop-app/releases/latest | jq -r '.tag_name')
           curl https://raw.githubusercontent.com/FelicianoTech/pocket-casts-desktop-app/${tag}/package-lock.json > package-lock.json
+          curl https://raw.githubusercontent.com/FelicianoTech/pocket-casts-desktop-app/${tag}/package.json > package.json
           flatpak-node-generator npm package-lock.json
-          rm -f package-lock.json
+          rm -f package-lock.json package.json
 
       - name: Reset Flatpak manifest to pre-modified state
         run: |
